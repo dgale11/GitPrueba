@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leccion 1</title>
+</head>
+<body>
+<h1>Seleccion de elementos por id</h1>
+<div id="uno" >hola1</div>
+<div id="dos" >hola2</div>
+<div id="tres" >hola3</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js" ></script>
+<script type="text/javascript">
+	//$ es equivalente a jQuery con Q mayuscula
+
+	$(document).ready(
+		
+		function() {
+			//asi se selecciona un id para trabajar con el
+			$("#uno").css("background-color","red");
+			jQuery("#dos").css("background-color","green");
+			jQuery("#tres").css("background-color","blue");
+			//se elimina el div
+			// $("#uno").remove();
+		}
+			
+		);
+
+</script>
+
+</body>
+</html>
